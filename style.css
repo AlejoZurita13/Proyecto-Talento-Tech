@@ -24,6 +24,7 @@ header h1{
     padding: 5px;
     text-align: center;
     color: white;
+    text-decoration: none;
 }
 header a{
     text-decoration: none;
