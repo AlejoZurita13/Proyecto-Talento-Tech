@@ -166,8 +166,8 @@ main{
     margin-right: 10px;
 }
 #div_nosotros a{
-    margin: 5px;
-    color: white;
+    margin: 5px !important;
+    color: white !important;
 }
 #div_faq{
     height: auto;
@@ -222,5 +222,6 @@ footer a{
     color: white;
     text-decoration: none;
     margin-left: 5px;
+    margin-bottom: 5px;
 }
 /* FOOTER */
