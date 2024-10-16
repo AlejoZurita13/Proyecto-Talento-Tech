@@ -24,10 +24,6 @@ header h1{
     padding: 5px;
     text-align: center;
     color: white;
-    /* text-decoration: none; */
-}
-header a{
-    /* text-decoration: none; */
 }
 /* HEADER */
 
@@ -168,6 +164,10 @@ main{
 #div_nosotros img{
     height: 25px;
     margin-right: 10px;
+}
+#div_nosotros a{
+    margin: 5px;
+    color: white;
 }
 #div_faq{
     height: auto;
