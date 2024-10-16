@@ -25,6 +25,9 @@ header h1{
     text-align: center;
     color: white;
 }
+header a{
+    text-decoration: none;
+}
 /* HEADER */
 
 /* NAV */
@@ -111,9 +114,9 @@ main{
 }
 .div_envio_form input{
     margin-top: 10px;
-    background-color: rgb(10, 45, 80);
-    border: lightblue;
-    border-radius: 3px;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #136;
 }
 .div_envio_form img{
     display: grid;
