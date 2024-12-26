@@ -6,37 +6,41 @@
 <body>
     <header>
         <link rel="stylesheet" href="style.css">
-        <div id="div_logo">
-            <img src="img/imagen_logo.png" alt="logo">
-            <a href="index.html" style="text-decoration: none;"><h1>Libre envío</h1></a>
-        </div>
-        <div id="div_nav">
-            <nav>
-                <strong>
-                    <ul>
-                        <div class="div_nav">
-                            <li><a href="index.html" >Inicio</a></li>
-                        </div>
-                        <div class="div_nav">
-                            <li><a href="envios.html">Envios</a></li>
-                        </div>
-                        <div class="div_nav">
-                            <li><a href="ayuda.html">Ayuda</a></li>
-                        </div>
-                        <div class="div_nav">
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                        </div>
-                    </ul>
-                </strong>
-            </nav>
+        <div class="header">
+            <div id="div_logo">
+                <img src="img/imagen_logo.png" alt="logo">
+            </div>
+            <div id="div_libre_envio">
+                <a href="index.html" style="text-decoration: none;"><h1>Libre envío</h1></a>
+            </div>
+            <div id="div_nav">
+                <nav>
+                    <strong>
+                        <ul>
+                            <div class="div_nav">
+                                <li><a href="index.html" >Inicio</a></li>
+                            </div>
+                            <div class="div_nav">
+                                <li><a href="envios.html">Envios</a></li>
+                            </div>
+                            <div class="div_nav">
+                                <li><a href="ayuda.html">Ayuda</a></li>
+                            </div>
+                            <div class="div_nav">
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </div>
+                        </ul>
+                    </strong>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <div id="div_ayuda">
             <h1>AYUDA</h1>
-            <ul>
+            <div id="div_contenedor_ayuda">
                 <div class="divs_ayuda">
-                    <li><h3>Peso de los paquetes</h3></li>
+                    <h3>Peso de los paquetes</h3>
                     <ul>
                         <li>En el caso de la paquetería instantánea no puede sobrepasar los 12,5kg (respetando las medidas establecidas para este tipo de envíos) con un máximo de 3 paquetes</li>
                         <li>En el caso de la paquetería a domicilio el peso puede ser hasta 25kg con un máximo de 10 paquetes</li>
@@ -44,7 +48,7 @@
                     </ul>
                 </div>
                 <div class="divs_ayuda">
-                    <li><h3>Medidas de paquetes</h3></li>
+                    <h3>Medidas de paquetes</h3>
                     <ul>
                         <li>En el caso de la paquetería instantánea no puede excederse de los 20cm por lado de una caja (8000cm<sup>3</sup>) con un máximo de 3 paquetes</li>
                         <li>En el caso de la paquetería a domicilio no puede excederse de los 50cm por lado (125000cm<sup>3</sup>) con un máximo de 10 paquetes</li>
@@ -52,7 +56,7 @@
                     </ul>
                 </div>
                 <div class="divs_ayuda">
-                    <li><h3>Tiempos de espera</h3></li>
+                    <h3>Tiempos de espera</h3>
                     <ul>
                         <li>El envío instantáneo se entrega en el día siendo el pedido solicitado antes de las 12hs</li>
                         <li>El envío a domicilio en el caso de AMBA tarda 2 días y el resto del país 3 días</li>
@@ -60,32 +64,36 @@
                     </ul>
                 </div>
                 <div class="divs_ayuda">
-                    <li><h3>Calidad de nuestro servicio</h3></li>
+                    <h3>Calidad de nuestro servicio</h3>
                     <ul>
                         <li>Contamos con una amplia red de distribución y una numerosa flota de moviles que nos permite cumplir nuestros cortos plazos de entrega
                         </li>
-                    <li>servicio a la comunidad</li>
+                    <li>Servicio a la comunidad</li>
                 </ul>
                 </div>
                 <div class="divs_ayuda">
-                    <li><h3>Medidas previas al retiro</h3></li>
+                    <h3>Medidas previas al retiro</h3>
                     <ul>
-                        <p>Previo al retiro del paquete debe tener en cuenta las siguientes medidas de seguridad : </p>
+                        <p>Previo al retiro del paquete debe tener en cuenta las siguientes medidas de seguridad: </p>
                         <li>La caja debe estar cerrada y encintada</li>
                         <li>En caso de que el paquete sea frágil, aclararlo en las notas del pedido</li>
-                        <li>Se necesita que el paquete tenga dentro un envoltorio de burbujas ara mayor cuidado</li>
+                        <li>Se necesita que el paquete tenga dentro un envoltorio de burbujas para mayor cuidado</li>
                     </ul>
                 </div>
-            </ul>
+            </div>
         </div>
     </main>
     <footer>
-        <div>
-            <strong><ul>
-                <li><a href="nosotros.html">Contacto</a></li>
-                <li><a href="faq_footer.html">FAQ</a></li>
-                <li><a href="ubi_oficinas.html">Dónde estamos</a></li>
-            </ul></strong>
+        <div id="div_footer">
+            <div class="div_footer_class">
+                <a href="nosotros.html">Contacto</a>
+            </div>
+            <div class="div_footer_class">
+                <a href="faq_footer.html">FAQ</a>
+            </div>
+            <div class="div_footer_class">
+                <a href="nosotros.html">Dónde estamos</a>
+            </div>
         </div>
     </footer>
 </body>
