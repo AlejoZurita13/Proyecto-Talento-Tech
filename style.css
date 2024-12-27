@@ -66,34 +66,32 @@ nav a{
 
 /* MAIN */
 main{
-    height: 100%;
-    width: 100%;
     position: relative;
-    display: flex;
-    justify-content: center;
     margin-top: 2%;
-    margin-bottom: 2%;
-}
-#div_main_index{
-    display: block;
 }
 #div_texto_main{
     text-align: center;
     color: white;
 }
+#div_main_index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 #div_texto_main p{
     margin-top: 10px;
-}
-#div_img_main{
-    justify-content: center;
+    margin-bottom: 10px;
 }
 #div_img_main img{
-    margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 0 40px 0 #000;
+    width: 80vw
 }
 #div_envios{
     width: 90%;
+    margin: auto;
+    margin-bottom: 2em;
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     grid-template-rows: repeat(3, 33.3%);
@@ -122,6 +120,9 @@ main{
     grid-column: 1/3;
     grid-row: 3/4;
 }
+#img_envio img{
+    height: 100px;
+}
 #div_imagen1{
     grid-column: 3/4;
     grid-row: 1/2;
@@ -134,53 +135,22 @@ main{
     grid-column: 3/4;
     grid-row: 3/4;
 }
-.div_envio_form{
-    height: auto;
-    display: grid;
-    place-items: center;
-    margin: auto;
-    margin-top: 20px;
-    color: white;
-}
-.div_envio_form p{
-    margin-top: 10px;
-    color: white;
-}
-.div_envio_form a{
-    margin-top: 10px;
-    color: white;
-}
-.div_envio_form label{
-    margin-top: 10px;
-    color: white;
-}
-.div_envio_form input{
-    margin-top: 10px;
-    border-width: 1px;
-    border-radius: 5px;
-    background-color: #136;
-}
-.div_envio_form img{
-    display: grid;
-    place-items: center;
-    margin: auto;
-}
-.div_envio_form h3{
-    margin-top: 10px;
-}
 #div_ayuda{
-    place-items: center;
+    display: block;
+    align-items: center;
     color: rgb(10, 45, 65);
 }
-#div_ayuda h1{
-    color: #fff
+#ayuda{
+    color: #fff;
+    text-align: center;
 }
 #div_contenedor_ayuda{
     display: flex;
-    width: 80%;
+    width: 100%;
     gap: 2em;
     flex-wrap: wrap;
     margin-top: 2em;
+    place-content: center;
 }
 .divs_ayuda{
     background-color: #fff;
@@ -199,44 +169,35 @@ main{
     margin: 1em, 0, 1em, 0;
 }
 #div_nosotros{
-    height: auto;
-    width: 50%;
-    display: grid;
-    margin: auto;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     color: white;
-    text-align: justify;
+    margin: 2em;
 }
 #div_nosotros h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    text-align: center;
 }
 #div_nosotros p{
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.7em;
 }
 #div_nosotros iframe{
-    display: grid;
-    margin: auto;
     box-shadow: 0 0 40px 0 #000;
     border-radius: 10px;
 }
-#div_nosotros img{
-    height: 25px;
-    margin-right: 10px;
-}
-#div_nosotros a{
+#div_links{
+    display: flex;
+    flex-direction: column;
     margin: 5px;
     color: white;
+    text-align: justify;
 }
 #div_oficinas{
-    width: fit-content;
-    height: fit-content;
     margin-top: 20px;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     color: white;
     text-align: center;
+    place-content: center;
 }
 #div_iframe_oficina{
     height: 450px;
@@ -249,11 +210,73 @@ main{
     margin: 10px;
     margin-top: 20px;
 }
+#FAQ{
+    display: flex;
+    width: 100%;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    place-content: center;
+}
+#FAQ_H1{
+    color: #fff;
+    text-align: center;
+}
+.divs_faq{
+    background-color: #fff;
+    padding: 1em;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    color: rgb(10, 45, 65);
+}
+.divs_faq a{
+    text-decoration: none;
+    color: rgb(10, 45, 65);
+}
+article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.formularios{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formularios label{
+    margin: 1.5em;
+}
+.formularios input{
+    border-radius: 10px;
+    text-align: center;
+    height: 2em;
+}
+.formularios textarea{
+    margin-bottom: 3em;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 4em;
+}
+.formularios button{
+    width: fit-content;
+    border-radius: 10px;
+}
+.formularios h3{
+    margin-top: 0.5em;
+}
+.formularios p{
+    margin: 0.5em;
+}
 /* MAIN */
 
 /* FOOTER */
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 1em 0;
@@ -265,6 +288,8 @@ footer{
 }
 .div_footer_class{
     margin-inline: 1em;
+    display: flex;
+    flex-direction: column;
 }
 #div_footer a{
     color: white;

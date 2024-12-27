@@ -36,67 +36,65 @@
         </div>
     </header>
     <main>
-        <div class="div_envio_form">
+        <article>
             <div>
-                <h1>Envío convencional a domicilio</h1>
+                <h1>Mensajería instantánea (AMBA)</h1>
             </div>
             <div id="img_envio">
                 <img src="img/producto_camion_envio.svg" alt="Camioneta envio">
             </div>
-            <div>
-                <p><strong>Importante:</strong> si es más de un paquete, aclarar si son para el mismo receptor</p>
-                <h3>Datos de retiro:</h3>
-            </div>
-            <div class="div_form_individual">
-                <form id="form_envio" action="script.js" method="post">
-                    <p>A quien retiramos:</p>
-                    <input id="input_sender_name" type="text" placeholder="Nombre"> <input id="input_sender_surname" type="text" placeholder="Apellido"> <br>
-                    <label for="">Dirección:</label>
-                    <input id="input_sender_direction" type="text"> <br>
-                    <label for="">CP:</label>
-                    <input id="input_sender_cp" type="text"> <br>
-                    <label for="">DNI:</label>
-                    <input id="input_sender_dni" type="email">	<br>
-                    <label for="">Email:</label>
-                    <input id="input_sender_email" type="text"> <br>
-                    <label for="">Aclaraciones:</label>
-                    <input id="input_sender_text" type="text">
-                </form>
-            </div>
-            <div>
-                <p>Si no sabes tu código postal, podes obtenerlo <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank">acá</a></p>
+            <form class="formularios" action="https://formspree.io/f/xpwwpwlo" method="post">
+                <p><strong>Atención:</strong> Tener en cuenta que si el paquete no es del <a href="faq_footer.html" style="color: #fff;">tamaño chico</a>, rechazaremos el envío</p>
+                <h3>Datos de retiro: </h3>
+                <p>A quien retiramos:</p>
+                <label><strong>Nombre completo: </strong></label>
+                <input id="fullNameS" name="fullNameS" type="text">
+                <label><strong>Dirección:</strong></label>
+                <input name="direccion" type="text">
+                <label><strong>CP:</strong></label>
+                <input name="cp" type="number">
+                <label><strong>DNI:</strong></label>
+                <input name="dni" type="number">
+                <label><strong>Email:</strong></label>
+                <input name="emailS" type="email">
+                <label><strong>Aclaraciones:</strong></label>
+                <textarea name="messageS" id=""></textarea>
+                <p>Si no sabes tu código postal, podes obtenerlo <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank" style="color: #fff;">acá</a></p>
                 <h3>Datos del destino</h3>
-            </div>
-            <div class="div_form_individual">
-                <form id="form_envio">
-                    <p>A quien entregamos:</p>
-                    <input id="input_reciever_name" type="text" placeholder="Nombre"> <input id="input_reciever_surname" type="text" placeholder="Apellido"> <br>
-                    <label for="">Dirección:</label>
-                    <input id="input_reciever_direction" type="text"> <br>
-                    <label for="">CP:</label>
-                    <input id="input_reciever_cp" type="text"> <br>
-                    <label for="">DNI:</label>
-                    <input id="input_reciever_dni" type="email">	<br>
-                    <label for="">Email:</label>
-                    <input id="input_reciever_email" type="text"> <br>
-                    <label for="">Aclaraciones:</label>
-                    <input id="input_reciever_text" type="text">
-                </form>
-            </div>
-        </div>
+                <p>A quien entregamos:</p>
+                <label><strong>Nombre completo: </strong></label>
+                <input name="fullNameR" type="text">
+                <label><strong>Dirección:</strong></label>
+                <input name="direccion" type="text">
+                <label><strong>CP:</strong></label>
+                <input name="cp" type="number">
+                <label><strong>DNI:</strong></label>
+                <input name="dni" type="number">
+                <label><strong>Email:</strong></label>
+                <input name="emailR" type="email">
+                <label><strong>Aclaraciones:</strong></label>
+                <textarea name="messageR" id=""></textarea>
+                <button type="submit" id="btn_send"><strong>Enviar</strong></button>
+            </form>
+        </article>
     </main>
     <footer>
         <div id="div_footer">
             <div class="div_footer_class">
-                <a href="nosotros.html">Contacto</a>
+                <strong><a href="contacto.html">Contacto</a></strong>
+                <a href="https://whatsapp.com" style="text-decoration: none; color: white; margin: 5px;"><i class="fa-brands fa-whatsapp" style="font-size:17px;"></i> +54 11 3606-1232</a>
+                <a href="https://gmail.com" style="text-decoration: none; color: white; margin: 5px;"><i class="fa-solid fa-envelope" style="font-size:17px;"></i> contacto.libre.envio@gmail.com</a>
+                <a href="https://x.com" style="text-decoration: none; color: white; margin: 5px;"><i class="fa-brands fa-twitter" style="font-size:17px;"></i> Twitter</a>
+                <a href="https://github.com/AlejoZurita13" style="text-decoration: none; color: white; margin: 5px;"><i class="fa-solid fa-code-fork" style="font-size:17px;"></i> Git Hub</a>
             </div>
             <div class="div_footer_class">
-                <a href="faq_footer.html">FAQ</a>
+                <strong><a href="faq_footer.html">FAQ</a></strong>
             </div>
             <div class="div_footer_class">
-                <a href="nosotros.html">Dónde estamos</a>
+                <strong><a href="nosotros.html">Dónde estamos</a></strong>
             </div>
         </div>
+        <script src="https://kit.fontawesome.com/f07c04aee5.js" crossorigin="anonymous"></script>
     </footer>
     <script src="script.js"></script>
 </body>
